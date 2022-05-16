@@ -1,0 +1,11 @@
+
+# https://github.com/docker/buildx/blob/master/docs/guides/custom-registry-config.md
+# https://github.com/moby/buildkit/blob/master/docs/buildkitd.toml.md
+
+debug = true
+
+[registry]
+
+[registry."pi3:5000"]
+http = true
+insecure = true

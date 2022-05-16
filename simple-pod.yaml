@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-rust
+spec:
+  containers:
+    - name: hello-rust
+      image: pi3:5000/hello-rust:latest
+      # image: hello-rust
+      ports:
+        - containerPort: 8080
